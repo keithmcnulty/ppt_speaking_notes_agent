@@ -1,0 +1,28 @@
+[project]
+name = "noteagent"
+version = "0.1.0"
+description = "Speaking notes agent"
+authors = [
+    {name = "Keith_McNulty",email = "keith.mcnulty@gmail.com"}
+]
+license = {text = "CC0"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai (>=1.91.0,<2.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "pandas (>=2.3.0,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "pillow (>=11.2.1,<12.0.0)",
+    "pdf2image (>=1.17.0,<2.0.0)",
+    "logging (>=0.4.9.6,<0.5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
